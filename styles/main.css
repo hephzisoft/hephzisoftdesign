@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
 /* *** General Styling  */
 * {
   color: white;
@@ -32,6 +34,7 @@ body {
   text-decoration: none;
   color: white;
   border-radius: 7px;
+  
 
 }
 /***** Landing page styling   */
@@ -59,11 +62,23 @@ body {
   display: flex;
   gap: 20px;
 }
-.about-upper .about-text{
-  
-  text-align: center;
-  padding-top: 50px;
+.about-text{
+  line-height: 1.4em;
 }
+.about-text-header{
+  font-family: 'Satisfy', cursive;
+  color: var(--bg-color);
+  font-weight: bold;
+  font-size: 2em;
+}
+.about-text-body::first-letter{
+  text-transform: capitalize;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Satisfy', cursive;
+}
+
+
 
 @media (max-width: 500px) {
   .main {
@@ -74,4 +89,11 @@ body {
     position: absolute;
     
   }
+  .about-upper{
+    display: block;
+  }
+  .about-text-header{
+    text-align: center;
+  }
+  
 }
