@@ -1,0 +1,24 @@
+{% load static %}
+{% load custom_tags %}
+<nav class="sidenav">
+  <div class="large">
+    <div class="logo nav-link">
+      <img
+        src="https://res.cloudinary.com/hephzisoft/image/upload/v1659625589/Hephzisoft/Free_Sample_By_Wix_pdwndp.jpg"
+        alt="logo"
+        class="rounded-circle img-fluid"
+      />
+    </div>
+    <div class="nav nav-link">
+      <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% anchor 'home' 'about' %}">About</a></li>
+        <li><a href="{% anchor 'home' 'contact' %}">Contact</a></li>
+        <li><a href="">Projects</a></li>
+      </ul>
+    </div>
+    <div class="footer nav-link">
+      Copyright &copy;2022 Owned by <a href="{% url 'home' %}">Hephzisoft</a>
+    </div>
+  </div>
+</nav>
